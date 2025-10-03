@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Email Assistant",
+  "description": "An AI-powered email assistant for Gmail.",
+  "version": "1.0",
+
+  "action": {
+    "default_title": "AI Email Assistant"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["index.js"],
+      "matches": ["*://mail.google.com/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": ["http://localhost:8080/*", "*://mail.google.com/*"]
+}
