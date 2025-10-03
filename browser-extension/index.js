@@ -40,8 +40,7 @@ function injectButton() {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer "
-                },
+                     },
                 body: JSON.stringify({
                     emailContent: getEmailContent()?.trim(),
                     tone: "professional",
