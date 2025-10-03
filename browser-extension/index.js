@@ -40,7 +40,7 @@ function injectButton() {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer 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"
+                    "Authorization": "Bearer "
                 },
                 body: JSON.stringify({
                     emailContent: getEmailContent()?.trim(),
